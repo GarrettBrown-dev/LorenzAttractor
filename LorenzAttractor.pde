@@ -22,5 +22,8 @@ void draw()
   x = x + dx;
   y = y + dy;
   z = z + dz;
-  println(x,y,z);
+  //println(x,y,z);
+  translate(width / 2, height / 2);
+  stroke(255);
+  point(x,y);
 }
