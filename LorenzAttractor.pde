@@ -16,7 +16,7 @@ void setup()
 {
   size(800,600, P3D);
   colorMode(HSB);
-  cam = new PeasyCam(this, 500);
+  cam = new PeasyCam(this, 500); // not strictly necessary for viewing!
 }
 
 void draw()
@@ -42,7 +42,7 @@ void draw()
   beginShape();
   for (PVector v : points) {
     stroke(hu, 255, 255);
-    rotateY((hu / 255) / 360);
+    // rotateY((hu / 255) / 360); use this if you don't want to use PeasyCam!
     vertex(v.x,v.y,v.z);
     PVector offset = PVector.random3D();
     // offset.mult(0.1);
