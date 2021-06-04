@@ -2,9 +2,9 @@ float x = 0.01;
 float y = 0;
 float z = 0;
 
-float a = 1;
-float b = 1;
-float c = 1;
+float a = 10; //Sigma
+float b = 28; //Ro
+float c = 8.0 / 3.0; //Beta
 
 void setup() 
 {
