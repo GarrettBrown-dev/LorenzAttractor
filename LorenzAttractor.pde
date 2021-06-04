@@ -6,6 +6,8 @@ float a = 10; //Sigma
 float b = 28; //Ro
 float c = 8.0 / 3.0; //Beta
 
+ArrayList<PVector> points = new ArrayList<PVector>();
+
 void setup() 
 {
   size(800,600, P3D);
@@ -22,6 +24,9 @@ void draw()
   x = x + dx;
   y = y + dy;
   z = z + dz;
+  
+  points.add(new PVector(x, y, z));
+  
   //println(x,y,z);
   translate(width / 2, height / 2);
   scale(5);
