@@ -15,7 +15,7 @@ void setup()
 
 void draw()
 {
-  float dt = 1;
+  float dt = 0.01;
   float dx = (a * (y - x)) * dt;
   float dy = (x * (b - z) - y) * dt;
   float dz = (x * y - c * z) * dt;
