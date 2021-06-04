@@ -15,6 +15,7 @@ PeasyCam cam;
 void setup() 
 {
   size(800,600, P3D);
+  colorMode(HSB);
   cam = new PeasyCam(this, 500);
 }
 
@@ -35,11 +36,19 @@ void draw()
   translate(width / 2, height / 2);
   scale(5);
   stroke(255);
+  noFill();
   
+  float hu = 0;
   beginShape();
   for (PVector v : points) {
-    point(v.x,v.y,v.z);
+    stroke(hu, 255, 255);
+    vertex(v.x,v.y,v.z);
+    hu += 0.1;
+    if (hu > 255) {
+      hu = 0;
+    }
  }
-  endShape();
-  
-}
+   endShape();
+   
+ }
+   
