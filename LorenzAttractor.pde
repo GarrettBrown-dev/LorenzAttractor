@@ -10,10 +10,12 @@ float c = 8.0 / 3.0; //Beta
 
 ArrayList<PVector> points = new ArrayList<PVector>();
 
+PeasyCam cam;
+
 void setup() 
 {
   size(800,600, P3D);
-  
+  cam = new PeasyCam(this, 500);
 }
 
 void draw()
@@ -36,5 +38,5 @@ void draw()
   
   for (PVector v : points) {
     point(v.x,v.y,v.z);
- }
+}
 }
