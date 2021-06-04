@@ -8,7 +8,7 @@ float c = 8.0 / 3.0; //Beta
 
 void setup() 
 {
-  size(800,600);
+  size(800,600, P3D);
   background(0);
   
 }
@@ -24,6 +24,7 @@ void draw()
   z = z + dz;
   //println(x,y,z);
   translate(width / 2, height / 2);
+  scale(5);
   stroke(255);
-  point(x,y);
+  point(x,y,z);
 }
