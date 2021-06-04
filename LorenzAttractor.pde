@@ -1,4 +1,4 @@
-float x = 0;
+float x = 0.01;
 float y = 0;
 float z = 0;
 
@@ -9,7 +9,7 @@ float c = 1;
 void setup() 
 {
   size(800,600);
-  
+  background(0);
   
 }
 
@@ -22,4 +22,5 @@ void draw()
   x = x + dx;
   y = y + dy;
   z = z + dz;
+  println(x,y,z);
 }
