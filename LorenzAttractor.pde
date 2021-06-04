@@ -36,7 +36,10 @@ void draw()
   scale(5);
   stroke(255);
   
+  beginShape();
   for (PVector v : points) {
     point(v.x,v.y,v.z);
-}
+ }
+  endShape();
+  
 }
