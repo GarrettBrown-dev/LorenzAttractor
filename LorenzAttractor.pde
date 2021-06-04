@@ -42,7 +42,12 @@ void draw()
   beginShape();
   for (PVector v : points) {
     stroke(hu, 255, 255);
+    rotateY((hu / 255) / 360);
     vertex(v.x,v.y,v.z);
+    PVector offset = PVector.random3D();
+    // offset.mult(0.1);
+    // v.add(offset);
+    
     hu += 0.1;
     if (hu > 255) {
       hu = 0;
