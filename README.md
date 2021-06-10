@@ -16,7 +16,7 @@ Mathmatical Formulas (Lorenz Equations) used for this Model:
 
 The result: A 3D rendering of the Lorenz Attractor with constant line drawing:
 
-<img src="img\LACap.jpg">
+<img src="img\LACap.JPG">
 
 ## Setup/Installation Requirements
 
